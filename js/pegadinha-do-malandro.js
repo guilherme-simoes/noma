@@ -1,10 +1,13 @@
-//var easter_egg = new Konami();
-//easter_egg.load('http://snaptortoise.com?konami');
+var iframe = document.getElementById('video');
 
+// $f == Froogaloop
+var player = $f(iframe);
 
-var easter_egg = new Konami(
-    function() {
-        var d = document.getElementById("noma-logo");
-        d.className += "cabeca";
-    )}
-);
+// bind events
+var playButton = document.getElementById("play-video");
+var playIcon = document.getElementById("play-icon");
+playButton.addEventListener("click", function() {
+  player.api("play");
+  playIcon.className = "hide";
+  playButton.className = "hide";
+});
