@@ -184,10 +184,6 @@ body {
         100% { transform: rotate(360deg); }
     }
 
-.typer {
-    color: #fff;
-}
-
 .color {
     animation-name: bg;
     animation-duration: 10s;
