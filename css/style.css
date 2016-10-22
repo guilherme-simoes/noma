@@ -3,10 +3,15 @@ html, body {
     padding: 0;
 }
 body {
-    background: #151515;
-    color: #efefef;
+    background: #EAEAEA;
+    color: #333;
     font-family: 'PT Mono', monospace;
 }
+
+.video span {
+    display: block;
+}
+
 .main-content {
     max-width: 700px;
     margin: 0 auto;
@@ -24,7 +29,6 @@ body {
 }
 .countries p {
     font-style: italic;
-    color: #666;
     font-size: 80%;
     text-align: center;
     padding-bottom: 2em;
@@ -34,7 +38,7 @@ body {
     height: 186px;
     position: relative;
     margin: 1em auto 1em;
-    background: #fff;
+    background: #333;
     z-index: 0;
 }
 
@@ -46,7 +50,7 @@ body {
     left: 11px;
 }
 .noma-logo {
-    fill: #151515;
+    fill: #EAEAEA;
 }
 
 .header {
@@ -77,15 +81,59 @@ body {
         top: 73px;
         right: 52px;
     }
-
-    .video {
-        display: block;
-        width: 100%;
-        height: 350px;
-        background: #50E3C2;
-    }
     .social:hover {
         top: 68px;
+    }
+
+.video {
+    display: block;
+    position: relative;
+}
+.video-overlay {
+    display: block;
+    width: 100%;
+    height: 360px;
+    background: #50E3C2;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+    .video-overlay .fa {
+        text-align: center;
+        font-size: 4em;
+        color: #39C7A7;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -30px 0 0 -30px;
+        transition: all .2s ease-in-out;
+    }
+    .video-overlay:hover .fa {
+        color: #fff;
+    }
+
+.hide {
+    visibility: hidden;
+}
+
+
+.social-icon {
+    fill: #333;
+    transition: all 0.2s ease-in-out;
+}
+    .social:hover .icon-dribbble {
+        fill: #EA4C89;
+    }
+    .social:hover .icon-vimeo {
+        fill: #00B3EC;
+    }
+    .social:hover .icon-instagram {
+        fill: #833FB5;
+    }
+    .social:hover .icon-facebook {
+        fill: #4867AA;
     }
 
 .shape {
@@ -97,7 +145,7 @@ body {
         height: 0;
         border: 8.5rem solid transparent;
         border-top: 0rem solid transparent;
-        border-bottom: 12rem solid #BD10E0;
+        border-bottom: 12rem solid #C56AD7;
         left: -50px;
         top: 0;
         transform: rotate(90deg);
@@ -106,11 +154,10 @@ body {
         width: 11rem;
         height: 11rem;
         border-radius: 100%;
-        background: #D0021B;
-        mix-blend-mode: screen;
+        background: rgba(221,84,101,0.81);
         left: 20px;
         top: 0;
-        animation: ginga 1s alternate infinite;
+        animation: ginga 3s alternate infinite;
     }
     @keyframes ginga {
         0% { height: 10.5rem;}
@@ -128,8 +175,8 @@ body {
     .square {
         width: 20rem;
         height: 20rem;
-        background: #50E3C2;
-        animation: quadrado 25s linear infinite;
+        background: #A1DED0;
+        animation: quadrado 50s linear infinite;
         right: -15rem;
         top: 6rem;
     }
@@ -172,30 +219,30 @@ body {
 
     @-moz-keyframes bg /* Firefox */ {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     @-webkit-keyframes bg /* Safari and Chrome */ {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     @-o-keyframes bg /* Opera */ {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     @keyframes bg {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     }
