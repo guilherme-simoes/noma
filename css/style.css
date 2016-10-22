@@ -3,8 +3,8 @@ html, body {
     padding: 0;
 }
 body {
-    background: #151515;
-    color: #efefef;
+    background: #EAEAEA;
+    color: #333;
     font-family: 'PT Mono', monospace;
 }
 .main-content {
@@ -24,7 +24,6 @@ body {
 }
 .countries p {
     font-style: italic;
-    color: #666;
     font-size: 80%;
     text-align: center;
     padding-bottom: 2em;
@@ -34,7 +33,7 @@ body {
     height: 186px;
     position: relative;
     margin: 1em auto 1em;
-    background: #fff;
+    background: #333;
     z-index: 0;
 }
 
@@ -46,7 +45,7 @@ body {
     left: 11px;
 }
 .noma-logo {
-    fill: #151515;
+    fill: #EAEAEA;
 }
 
 .header {
@@ -88,6 +87,23 @@ body {
         top: 68px;
     }
 
+.social-icon {
+    fill: #333;
+    transition: all 0.2s ease-in-out;
+}
+    .social:hover .icon-dribbble {
+        fill: #EA4C89;
+    }
+    .social:hover .icon-vimeo {
+        fill: #00B3EC;
+    }
+    .social:hover .icon-instagram {
+        fill: #833FB5;
+    }
+    .social:hover .icon-facebook {
+        fill: #4867AA;
+    }
+
 .shape {
     display: block;
     position: absolute;
@@ -97,7 +113,7 @@ body {
         height: 0;
         border: 8.5rem solid transparent;
         border-top: 0rem solid transparent;
-        border-bottom: 12rem solid #BD10E0;
+        border-bottom: 12rem solid #C56AD7;
         left: -50px;
         top: 0;
         transform: rotate(90deg);
@@ -106,11 +122,10 @@ body {
         width: 11rem;
         height: 11rem;
         border-radius: 100%;
-        background: #D0021B;
-        mix-blend-mode: screen;
+        background: rgba(221,84,101,0.81);
         left: 20px;
         top: 0;
-        animation: ginga 1s alternate infinite;
+        animation: ginga 3s alternate infinite;
     }
     @keyframes ginga {
         0% { height: 10.5rem;}
@@ -128,14 +143,18 @@ body {
     .square {
         width: 20rem;
         height: 20rem;
-        background: #50E3C2;
-        animation: quadrado 25s linear infinite;
+        background: #A1DED0;
+        animation: quadrado 50s linear infinite;
         right: -15rem;
         top: 6rem;
     }
     @keyframes quadrado {
         100% { transform: rotate(360deg); }
     }
+
+.typer {
+    color: #fff;
+}
 
 .color {
     animation-name: bg;
@@ -172,30 +191,30 @@ body {
 
     @-moz-keyframes bg /* Firefox */ {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     @-webkit-keyframes bg /* Safari and Chrome */ {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     @-o-keyframes bg /* Opera */ {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     @keyframes bg {
     0% {
-    background: #fff; }
+    background: #333; }
     50% {
     background: #BD10E0; }
     100% {
-    background: #50E3C2; } }
+    background: #F5A623; } }
     }
