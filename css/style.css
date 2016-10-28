@@ -20,13 +20,17 @@ body {
 .about {
     padding: 2em;
 }
-.about p {
-    line-height: 170%;
-}
-.about p span {
-    font-weight: bold;
-    text-decoration: underline;
-}
+    .about p {
+        margin: 0;
+        line-height: 150%;
+    }
+        .about p span {
+            font-weight: bold;
+        }
+    p.talk-to-us {
+        padding-top: 15px;
+        font-weight: bold;
+    }
 .countries p {
     font-style: italic;
     font-size: 80%;
@@ -220,29 +224,36 @@ body {
     @-moz-keyframes bg /* Firefox */ {
     0% {
     background: #333; }
-    50% {
-    background: #BD10E0; }
+    30% {
+    background: #6D0782; }
+    60% {
+    background: #2F5A50; }
     100% {
-    background: #F5A623; } }
+    background: #731924; } }
     @-webkit-keyframes bg /* Safari and Chrome */ {
     0% {
     background: #333; }
-    50% {
-    background: #BD10E0; }
+    30% {
+    background: #6D0782; }
+    60% {
+    background: #2F5A50; }
     100% {
-    background: #F5A623; } }
+    background: #731924; } }
     @-o-keyframes bg /* Opera */ {
     0% {
     background: #333; }
-    50% {
-    background: #BD10E0; }
+    30% {
+    background: #6D0782; }
+    60% {
+    background: #2F5A50; }
     100% {
-    background: #F5A623; } }
+    background: #731924; } }
     @keyframes bg {
     0% {
     background: #333; }
-    50% {
-    background: #BD10E0; }
+    30% {
+    background: #6D0782; }
+    60% {
+    background: #2F5A50; }
     100% {
-    background: #F5A623; } }
-    }
+    background: #731924; } }
