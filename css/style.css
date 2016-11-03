@@ -13,7 +13,7 @@ body {
 }
 
 .main-content {
-    max-width: 700px;
+    max-width: 648px;
     margin: 0 auto;
     padding: 0 2em;
 }
@@ -22,21 +22,26 @@ body {
 }
     .about p {
         margin: 0;
-        line-height: 150%;
+        font-size: 95%;
+        line-height: 170%;
     }
         .about p span {
             font-weight: bold;
         }
     p.talk-to-us {
         padding-top: 15px;
-        font-weight: bold;
+        font-weight: bolder;
     }
 .countries p {
     font-style: italic;
     font-size: 80%;
-    text-align: center;
     padding-bottom: 2em;
+    padding-top: 2em;
+    color: #afafaf;
 }
+    .countries p span {
+        color: #ce4732;
+    }
 .color {
     width:217px;
     height: 186px;
